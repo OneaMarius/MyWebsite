@@ -10,7 +10,7 @@ const leftCtrl = document.getElementById('leftCtrl');
 const rightCtrl = document.getElementById('rightCtrl');
 const currentPage = document.getElementById('currentPage');
 // doorBtn.addEventListener("click", toggleDoors);
-let pages = ['home','about','services','contact']
+let pages = ['home','about','projects','contact']
 let index;
 sessionStorage.setItem('index','0');
 
@@ -91,7 +91,7 @@ function checkActiveLink() {
 
 function swapPageBack() {
   let index = +sessionStorage.getItem('index');
-  console.log(index)
+  // console.log(index)
   switch (index) {
     case 0:
       current = 3;

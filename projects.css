@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap");
+
+.p_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.p_projects {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 25px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.p_open {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-image: var(--color-1-gr);
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: translateY(100%);
+}
+
+.p_projects:hover .p_open {
+  transform: translateY(0);
+}
+
+.open_project {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  width: auto;
+  height: auto;
+  background-color: var(--color-2-btn);
+}
+
+.open_project:focus,
+.open_project:active {
+  outline: none;
+}
+
+.open_project:hover {
+  background-color: var(--color-2);
+}
+
+.projName {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 15%;
+  width: 100%;
+  background-color: var(--color-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.p_projects a {
+  text-decoration: none;
+}
+
+.p_projects a:link,
+.p_projects a:active,
+.p_projects a:visited {
+  color: inherit;
+}

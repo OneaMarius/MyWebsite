@@ -12,6 +12,8 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="projects.css" />
     <script src="script.js" defer></script>
     <script src="main.js" defer></script>
     <title>My New Website</title>
@@ -25,7 +27,7 @@
           <ul id="navLinks" class="navLinks">
             <li><a class="selectedLink">Home</a></li>
             <li><a>About</a></li>
-            <li><a>Services</a></li>
+            <li><a>Projects</a></li>
             <li><a>Contact</a></li>
           </ul>
           <button id="mobileMenuBtn" class="m_nav-btn open-btn">
@@ -37,7 +39,7 @@
         <ul id="mobileNavLinks" class="navLinks">
           <li><a class="selectedLink">Home</a></li>
           <li><a>About</a></li>
-          <li><a>Services</a></li>
+          <li><a>Projects</a></li>
           <li><a>Contact</a></li>
         </ul>
       </div>
@@ -45,9 +47,61 @@
       <main>
         <div class="mainContent">
           <div class="home pages" id="home">Home</div>
-          <div class="about pages" id="about">About</div>
-          <div class="services pages" id="services">Services</div>
+
+          <div class="about pages" id="about">
+            <div class="icons">
+              <i class="fab fa-html5" id="html"></i>
+              <i class="fab fa-css3-alt" id="css"></i>
+              <i class="fab fa-js-square" id="js"></i>
+              <i class="fab fa-node" id="node"></i>
+              <i class="fab fa-react" id="react"></i>
+            </div>
+            <embed src="cv/CV_en.pdf" />
+          </div>
+
+          <div class="projects pages" id="projects">
+            <div class="p_container">
+              <div class="p_projects" style="background-image: url('/img/blackjack1.PNG');">
+                <div class="projName">BlackJack</div>
+                <div class="p_open">
+                  <button class="open_project"><a href="https://mod-blackjack.netlify.app">Open</a></button>
+                </div>
+              </div>
+              <div class="p_projects" style="background-image: url('/img/catsvsdogs1.PNG');">
+                <div class="projName">Cats Vs Dogs</div>
+                <div class="p_open">
+                  <button class="open_project"><a href="https://mod-cats-vs-dogs.netlify.app">Open</a></button>
+                </div>
+              </div>
+              <div class="p_projects" style="background-image: url('/img/encrypt1.PNG');">
+                <div class="projName">Encrypt</div>
+                <div class="p_open">
+                  <button class="open_project"><a href="https://mod-encrypt.netlify.app">Open</a></button>
+                </div>
+              </div>
+              <div class="p_projects" style="background-image: url('/img/projmanagement1.PNG');">
+                <div class="projName">Project Man.</div>
+                <div class="p_open">
+                  <button class="open_project"><a href="https://mod-project-management.netlify.app">Open</a></button>
+                </div>
+              </div>
+              <div class="p_projects" style="background-image: url('/img/reactshop1.PNG');">
+                <div class="projName">React Shop</div>
+                <div class="p_open">
+                  <button class="open_project"><a href="https://mariusonea-react2.netlify.app">Open</a></button>
+                </div>
+              </div>
+              <div class="p_projects" style="background-image: url('/img/nodeShop1.PNG');">
+                <div class="projName">Node Shop</div>
+                <div class="p_open">
+                  <button class="open_project"><a href="https://mariusonea-nodejs-onlineshop.herokuapp.com">Open</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="contact pages" id="contact">Contact</div>
+
           <div class="kinetic"></div>
           <div class="door leftDoor"></div>
           <div class="door rightDoor"></div>

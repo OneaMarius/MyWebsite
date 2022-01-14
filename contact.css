@@ -1,0 +1,63 @@
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60vh;
+  width: 100vw;
+  font-family: "Roboto Slab", serif;
+}
+
+#contact .extraApp {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .input {
+  width: 290px;
+  height: 2.5rem;
+  font-size: 1rem;
+  transition: width 0.5s ease;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  padding-left: 2rem;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+#contact .btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 280px;
+  transition: transform 0.5s ease;
+  border: none;
+  background-color: transparent;
+}
+
+#contact .btn i {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  /* background-color: black; */
+  z-index: 3;
+  cursor: pointer;
+}
+
+#contact .input:focus,
+#contact .btn:focus {
+  outline: none;
+}
+
+#contact .extraApp.activated .input {
+  width: 0px;
+}
+
+#contact .extraApp.activated .btn {
+  transform: translateX(280px);
+}

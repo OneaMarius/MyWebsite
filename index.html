@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="home.css" />
     <script src="script.js" defer></script>
     <script src="main.js" defer></script>
     <title>My New Website</title>
@@ -46,7 +48,20 @@
       <!-- End Navigation -->
       <main>
         <div class="mainContent">
-          <div class="home pages" id="home">Home</div>
+          <div class="home pages" id="home">
+
+            <div class="clock-container">
+              <div class="clock">
+                <div class="needle hour"></div>
+                <div class="needle minute"></div>
+                <div class="needle second"></div>
+                <div class="center-point"></div>
+              </div>
+
+              <div class="time"></div>
+              <div class="date"></div>
+            </div>
+          </div>
 
           <div class="about pages" id="about">
             <div class="icons">
@@ -61,46 +76,133 @@
 
           <div class="projects pages" id="projects">
             <div class="p_container">
-              <div class="p_projects" style="background-image: url('/img/blackjack1.PNG');">
+              <div
+                class="p_projects"
+                style="background-image: url('/img/blackjack1.PNG')"
+              >
                 <div class="projName">BlackJack</div>
                 <div class="p_open">
-                  <button class="open_project"><a href="https://mod-blackjack.netlify.app">Open</a></button>
+                  <button class="open_project">
+                    <a href="https://mod-blackjack.netlify.app">Open</a>
+                  </button>
                 </div>
               </div>
-              <div class="p_projects" style="background-image: url('/img/catsvsdogs1.PNG');">
+              <div
+                class="p_projects"
+                style="background-image: url('/img/catsvsdogs1.PNG')"
+              >
                 <div class="projName">Cats Vs Dogs</div>
                 <div class="p_open">
-                  <button class="open_project"><a href="https://mod-cats-vs-dogs.netlify.app">Open</a></button>
+                  <button class="open_project">
+                    <a href="https://mod-cats-vs-dogs.netlify.app">Open</a>
+                  </button>
                 </div>
               </div>
-              <div class="p_projects" style="background-image: url('/img/encrypt1.PNG');">
+              <div
+                class="p_projects"
+                style="background-image: url('/img/encrypt1.PNG')"
+              >
                 <div class="projName">Encrypt</div>
                 <div class="p_open">
-                  <button class="open_project"><a href="https://mod-encrypt.netlify.app">Open</a></button>
+                  <button class="open_project">
+                    <a href="https://mod-encrypt.netlify.app">Open</a>
+                  </button>
                 </div>
               </div>
-              <div class="p_projects" style="background-image: url('/img/projmanagement1.PNG');">
+              <div
+                class="p_projects"
+                style="background-image: url('/img/projmanagement1.PNG')"
+              >
                 <div class="projName">Project Man.</div>
                 <div class="p_open">
-                  <button class="open_project"><a href="https://mod-project-management.netlify.app">Open</a></button>
+                  <button class="open_project">
+                    <a href="https://mod-project-management.netlify.app"
+                      >Open</a
+                    >
+                  </button>
                 </div>
               </div>
-              <div class="p_projects" style="background-image: url('/img/reactshop1.PNG');">
+              <div
+                class="p_projects"
+                style="background-image: url('/img/reactshop1.PNG')"
+              >
                 <div class="projName">React Shop</div>
                 <div class="p_open">
-                  <button class="open_project"><a href="https://mariusonea-react2.netlify.app">Open</a></button>
+                  <button class="open_project">
+                    <a href="https://mariusonea-react2.netlify.app">Open</a>
+                  </button>
                 </div>
               </div>
-              <div class="p_projects" style="background-image: url('/img/nodeShop1.PNG');">
+              <div
+                class="p_projects"
+                style="background-image: url('/img/nodeShop1.PNG')"
+              >
                 <div class="projName">Node Shop</div>
                 <div class="p_open">
-                  <button class="open_project"><a href="https://mariusonea-nodejs-onlineshop.herokuapp.com">Open</a></button>
+                  <button class="open_project">
+                    <a href="https://mariusonea-nodejs-onlineshop.herokuapp.com"
+                      >Open</a
+                    >
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="contact pages" id="contact">Contact</div>
+          <div class="contact pages" id="contact">
+            <div class="contact_info">
+              <div class="extraApp activated">
+                <input
+                  type="text"
+                  class="input"
+                  value="github.com/OneaMarius"
+                  readonly
+                />
+                <button class="btn miniApp">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+              <div class="extraApp activated">
+                <input
+                  type="text"
+                  class="input"
+                  value="mariussaudaniel@gmail.com"
+                  readonly
+                />
+                <button class="btn miniApp">
+                  <i class="fas fa-envelope"></i>
+                </button>
+              </div>
+              <div class="extraApp activated">
+                <input type="text" class="input" value="0747295028" readonly />
+                <button class="btn miniApp">
+                  <i class="fas fa-mobile-alt"></i>
+                </button>
+              </div>
+              <div class="extraApp activated">
+                <input
+                  type="text"
+                  class="input"
+                  value="facebook.com/mariusdaniel.onea"
+                  readonly
+                />
+                <button class="btn miniApp">
+                  <i class="fab fa-facebook-messenger"></i>
+                </button>
+              </div>
+              <div class="extraApp activated">
+                <input
+                  type="text"
+                  class="input"
+                  value="linkedin.com/in/marius-onea/"
+                  readonly
+                />
+                <button class="btn miniApp">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
 
           <div class="kinetic"></div>
           <div class="door leftDoor"></div>

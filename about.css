@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap");
+
 #about .icons {
   position: fixed;
   left: 0;
@@ -44,7 +46,7 @@
   border-radius: 25px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 700px) {
   #about .icons {
     position: fixed;
     left: 0;

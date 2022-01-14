@@ -9,7 +9,7 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
     <script src="script.js" defer></script>
@@ -21,12 +21,12 @@
     <div class="body">
       <nav class="nav">
         <div class="container">
-          <h1 class="logo"><a href="#home" onclick="reload()"><img src="img/logo.png" alt="logo"></a></h1>
+          <h1 class="logo"><img src="img/logo.png" alt="logo" /></h1>
           <ul id="navLinks" class="navLinks">
-            <li><a  class="selectedLink">Home</a></li>
-            <li><a >About</a></li>
-            <li><a >Services</a></li>
-            <li><a >Contact</a></li>
+            <li><a class="selectedLink">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact</a></li>
           </ul>
           <button id="mobileMenuBtn" class="m_nav-btn open-btn">
             <i class="fas fa-bars"></i>
@@ -35,10 +35,10 @@
       </nav>
       <div class="m_nav">
         <ul id="mobileNavLinks" class="navLinks">
-          <li><a  class="selectedLink">Home</a></li>
-          <li><a >About</a></li>
-          <li><a >Services</a></li>
-          <li><a >Contact</a></li>
+          <li><a class="selectedLink">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Services</a></li>
+          <li><a>Contact</a></li>
         </ul>
       </div>
       <!-- End Navigation -->
@@ -51,14 +51,19 @@
           <div class="kinetic"></div>
           <div class="door leftDoor"></div>
           <div class="door rightDoor"></div>
-          
         </div>
       </main>
 
       <footer id="footer">
         <!-- <button id="doorBtn">Doors</button> -->
         <a id="specialLink"></a>
-        <p><span id="createdBy">&#9791;</span>Created by Onea Marius</p>
+        <i class="fas fa-chevron-circle-left" id="leftCtrl"></i>
+        <p>
+          <!-- <span id="createdBy">&#9400;</span> -->
+          <span id="currentPage">&#9400; Onea Marius</span>
+          <!-- <span id="createdBy">&#9791;</span> -->
+        </p>
+        <i class="fas fa-chevron-circle-right" id="rightCtrl"></i>
       </footer>
     </div>
   </body>

@@ -118,14 +118,34 @@ main {
 }
 
 #createdBy {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 1rem;
+}
+
+#currentPage {
+  display: none;
 }
 
 #footer p {
   text-align: center;
   line-height: 10vh;
-  font-size: 1rem;
+  font-size: 2rem;
+}
+
+#footer .fas {
+  position: absolute;
+  font-size: 8vh;
+  z-index: 4;
+}
+
+#leftCtrl {
+  left: 0.5rem;
+  display: none;
+}
+
+#rightCtrl {
+  right: 0.5rem;
+  display: none;
 }
 
 /* Mobile Nav */
@@ -187,15 +207,24 @@ main {
   transform: translateY(0);
 }
 
-@media (max-width: 480px) {
-  /* #footer {
-    background-color: var(--color-3);
-  } */
+@media (max-width: 560px) {
   #navLinks {
     display: none;
   }
 
   #mobileMenuBtn {
+    display: block;
+  }
+
+  #leftCtrl {
+    display: block;
+  }
+
+  #rightCtrl {
+    display: block;
+  }
+
+  #currentPage {
     display: block;
   }
 }

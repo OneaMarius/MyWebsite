@@ -19,6 +19,15 @@
   padding: 1rem;
 }
 
+@media (max-height: 500px) {
+  #about .icons i {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
 #about #html {
   color: orange;
 }

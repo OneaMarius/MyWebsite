@@ -46,3 +46,29 @@ miniApps.forEach((miniApp, i)=>{
         extraApps[i].classList.toggle('activated');
 })})
 
+/// background changer ////
+
+// const backgroundClr = document.querySelector('.clock');
+const backgroundClr = document.querySelector('.home');
+
+
+function randomRgbNr() {
+    return Math.floor(Math.random()*256)
+}
+
+
+function randomRGB() {
+    const r = randomRgbNr();
+    const g = randomRgbNr();
+    const b = randomRgbNr();
+    return `${r}, ${g}, ${b}`
+}
+console.log(randomRGB(), `linear-gradient(rgb(${randomRGB}), rgb(252, 0, 0))`);
+
+
+function changeBgColor() {
+    backgroundClr.style.backgroundImage = `linear-gradient(rgb(${randomRGB()}), rgb(${randomRGB()})`;
+    // backgroundClr.style.backgroundColor = `rgb(${randomRGB()})`;
+}
+
+setInterval(changeBgColor,1000);

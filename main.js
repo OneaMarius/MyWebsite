@@ -63,7 +63,7 @@ function randomRGB() {
     const b = randomRgbNr();
     return `${r}, ${g}, ${b}`
 }
-console.log(randomRGB(), `linear-gradient(rgb(${randomRGB}), rgb(252, 0, 0))`);
+// console.log(randomRGB(), `linear-gradient(rgb(${randomRGB}), rgb(252, 0, 0))`);
 
 
 function changeBgColor() {

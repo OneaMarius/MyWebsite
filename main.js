@@ -49,7 +49,7 @@ miniApps.forEach((miniApp, i)=>{
 /// background changer ////
 
 // const backgroundClr = document.querySelector('.clock');
-const backgroundClr = document.querySelector('.home');
+const backgroundClr = document.querySelectorAll('.pages');
 
 
 function randomRgbNr() {
@@ -67,8 +67,11 @@ function randomRGB() {
 
 
 function changeBgColor() {
-    backgroundClr.style.backgroundImage = `linear-gradient(rgb(${randomRGB()}), rgb(${randomRGB()})`;
-    // backgroundClr.style.backgroundColor = `rgb(${randomRGB()})`;
+    // backgroundClr.style.backgroundImage = `linear-gradient(rgb(${randomRGB()}), rgb(${randomRGB()})`;
+    backgroundClr.forEach(bgc => {
+        bgc.style.backgroundColor = `rgb(${randomRGB()})`;
+    })
+    
 }
 
-setInterval(changeBgColor,1000);
+setInterval(changeBgColor,5000);

@@ -1,110 +1,110 @@
 /* Doors and Main */
 
 .mainContent {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 500ms linear 500ms;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 500ms linear 500ms;
 }
 
 .mainContent .door {
-  position: fixed;
-  width: 50%;
-  height: 100%;
-  z-index: 2;
-  transition: transform 0.5s ease;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    transition: transform 0.5s ease;
 }
 
 .mainContent .door.leftDoor {
-  left: 0px;
-  top: 0px;
-  background-color: var(--color-1);
-  transform: translateX(-100%);
+    left: 0px;
+    top: 0px;
+    background-color: var(--color-1);
+    transform: translateX(-100%);
 }
 
 .mainContent .door.rightDoor {
-  right: 0px;
-  top: 0px;
-  background-color: var(--color-1);
-  transform: translateX(100%);
+    right: 0px;
+    top: 0px;
+    background-color: var(--color-1);
+    transform: translateX(100%);
 }
 
 .mainContent.loading .door {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 #doorBtn {
-  padding: 0.25rem;
-  font-weight: bold;
-  font-size: 1rem;
+    padding: 0.25rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 /* Loader */
 
 .kinetic {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(var(--loader-sizeN), var(--loader-sizeN));
-  z-index: 3;
-  display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(var(--loader-sizeN), var(--loader-sizeN));
+    z-index: 3;
+    display: none;
 }
 
 .kinetic.loading {
-  display: block;
+    display: block;
 }
 
 .kinetic::after,
 .kinetic::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border: var(--loader-size) solid transparent;
-  border-bottom-color: #fff;
-  animation: rotateA 1s linear infinite 0.25s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: var(--loader-size) solid transparent;
+    border-bottom-color: #fff;
+    animation: rotateA 1s linear infinite 0.25s;
 }
 
 .kinetic::before {
-  transform: rotate(90deg);
-  animation: rotateB 1s linear infinite;
+    transform: rotate(90deg);
+    animation: rotateB 1s linear infinite;
 }
 
 @keyframes rotateA {
-  0%,
-  25% {
-    transform: rotate(0deg);
-  }
+    0%,
+    25% {
+        transform: rotate(0deg);
+    }
 
-  50%,
-  75% {
-    transform: rotate(180deg);
-  }
+    50%,
+    75% {
+        transform: rotate(180deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes rotateB {
-  0%,
-  25% {
-    transform: rotate(90deg);
-  }
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
 
-  50%,
-  75% {
-    transform: rotate(270deg);
-  }
+    50%,
+    75% {
+        transform: rotate(270deg);
+    }
 
-  100% {
-    transform: rotate(450deg);
-  }
+    100% {
+        transform: rotate(450deg);
+    }
 }
 
 /* Pages */
@@ -117,52 +117,55 @@
 } */
 
 .pages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--color-2);
-  text-shadow: 2px 2px 4px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-2);
+    text-shadow: 2px 2px 4px black;
 }
 
 .home {
-  width: 100%;
-  height: 80vh;
-  background-image: linear-gradient(rgb(11, 235, 104), rgb(60, 11, 235));
-  /* background-color: rgb(11, 235, 104); */
-  transition: all 0.5s linear;
+    width: 100%;
+    height: 80vh;
+    /* background-image: linear-gradient(rgb(11, 235, 104), rgb(60, 11, 235)); */
+    background-color: rgb(0, 0, 0);
+    transition: all 5s linear;
 }
 
 .about {
-  width: 100%;
-  height: 80vh;
-  /* background-color: rgb(60, 11, 235); */
-  background-image: linear-gradient(rgb(60, 11, 235), rgb(228, 11, 235));
-  transform: translateY(100%);
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(60, 11, 235);
+    /* background-image: linear-gradient(rgb(60, 11, 235), rgb(228, 11, 235)); */
+    transform: translateY(100%);
+    transition: background-color 5s linear;
 }
 
 .projects {
-  width: 100%;
-  height: 80vh;
-  /* background-color: rgb(228, 11, 235); */
-  background-image: linear-gradient(rgb(228, 11, 235), rgb(252, 0, 0));
-  transform: translateY(200%);
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(228, 11, 235);
+    /* background-image: linear-gradient(rgb(228, 11, 235), rgb(252, 0, 0)); */
+    transform: translateY(200%);
+    transition: background-color 5s linear;
 }
 
 .contact {
-  width: 100%;
-  height: 80vh;
-  /* background-color: rgb(252, 0, 0); */
-  background-image: linear-gradient(rgb(228, 11, 235), rgb(11, 235, 104));
-  transform: translateY(300%);
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(252, 0, 0);
+    /* background-image: linear-gradient(rgb(228, 11, 235), rgb(11, 235, 104)); */
+    transform: translateY(300%);
+    transition: background-color 5s linear;
 }
 
 #about {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: red;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }

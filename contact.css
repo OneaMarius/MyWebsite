@@ -1,92 +1,92 @@
 .contact_info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 60vh;
-  width: 100vw;
-  font-family: "Roboto Slab", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 100vw;
+    font-family: "Roboto Slab", serif;
 }
 
 #contact .extraApp {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #contact input {
-  width: 0px;
-  height: 3.5rem;
-  font-size: 1rem;
-  transition: width 0.5s ease;
-  border: none;
-  border-radius: 10px;
-  background-color: transparent;
-  padding-left: 2rem;
-  font-family: inherit;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
+    width: 0px;
+    height: 3.5rem;
+    font-size: 1rem;
+    transition: width 0.5s ease;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    padding-left: 2rem;
+    font-family: inherit;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
 
 #contact a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 #contact a #telephone {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 #contact .btn {
-  width: 2.5rem;
-  height: 3.5rem;
-  position: absolute;
-  right: calc(50%-2.5rem);
-  transition: transform 0.5s ease;
-  border: none;
-  background-color: transparent;
+    width: 2.5rem;
+    height: 3.5rem;
+    position: absolute;
+    right: calc(50%-2.5rem);
+    transition: transform 0.5s ease;
+    border: none;
+    background-color: transparent;
 }
 
 #contact .btn i {
-  font-size: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
-  cursor: pointer;
-  text-shadow: 1px 1px 2px black;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
 }
 
 #i_tel {
-  color: #cddc39;
+    color: red;
 }
 #i_mail {
-  color: white;
+    color: white;
 }
 #i_github {
-  color: black;
+    color: black;
 }
 #i_linkedin {
-  color: #0077b5;
+    color: #0077b5;
 }
 #i_facebook {
-  color: #4267b2;
+    color: #4267b2;
 }
 
 #contact .input:focus,
 #contact .btn:focus {
-  outline: none;
+    outline: none;
 }
 
 #contact .extraApp.activated .input {
-  width: 300px;
+    width: 300px;
 }
 
 #contact .extraApp.activated .btn {
-  transform: translateX(-150px);
+    transform: translateX(-150px);
 }

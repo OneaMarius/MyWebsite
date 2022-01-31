@@ -74,4 +74,4 @@ function changeBgColor() {
     
 }
 
-setInterval(changeBgColor,5000);
+// setInterval(changeBgColor,5000);

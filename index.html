@@ -1,278 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Onea Marius">
-    <meta name="description" content="I am at the beginning of my career in Web Development. For some time now I have been taking programming courses and I
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Onea Marius" />
+        <meta
+            name="description"
+            content="I am at the beginning of my career in Web Development. For some time now I have been taking programming courses and I
     have obtained certifications in HTML / CSS, JavaScript, React JS and MERN. Currently I am trying to develop new skills
-    working on individual projects and this is my portfolio website.">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="projects.css" />
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="home.css" />
-    <script src="script.js" defer></script>
-    <script src="main.js" defer></script>
-    <title>OMD Website</title>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <div class="body">
-      <nav class="nav">
-        <div class="container">
-          <h1 class="logo"><img src="img/logo.png" alt="logo" /></h1>
-          <ul id="navLinks" class="navLinks">
-            <li><a class="selectedLink">Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-          <button id="mobileMenuBtn" class="m_nav-btn open-btn">
-            <i class="fas fa-bars"></i>
-          </button>
+    working on individual projects and this is my portfolio website."
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+            crossorigin="anonymous"
+        />
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="about.css" />
+        <link rel="stylesheet" href="projects.css" />
+        <link rel="stylesheet" href="contact.css" />
+        <link rel="stylesheet" href="home.css" />
+        <script src="script.js" defer></script>
+        <script src="main.js" defer></script>
+        <title>OMD Website</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="body">
+            <nav class="nav">
+                <div class="container">
+                    <h1 class="logo"><img src="img/logo.png" alt="logo" /></h1>
+                    <ul id="navLinks" class="navLinks">
+                        <li><a class="selectedLink">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Projects</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                    <button id="mobileMenuBtn" class="m_nav-btn open-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <div class="m_nav">
+                <ul id="mobileNavLinks" class="navLinks">
+                    <li><a class="selectedLink">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <!-- End Navigation -->
+            <main>
+                <div class="mainContent">
+                    <!-- HOME -->
+                    <div class="home pages" id="home">
+                        <div class="clock-container">
+                            <div class="clock">
+                                <div class="needle hour"></div>
+                                <div class="needle minute"></div>
+                                <div class="needle second"></div>
+                                <div class="center-point"></div>
+                            </div>
+
+                            <div class="time"></div>
+                            <div class="date"></div>
+                        </div>
+                    </div>
+                    <!-- ABOUT -->
+                    <div class="about pages" id="about">
+                        <div class="icons">
+                            <i class="fab fa-html5" id="html"></i>
+                            <i class="fab fa-css3-alt" id="css"></i>
+                            <i class="fab fa-js-square" id="js"></i>
+                            <i class="fab fa-node" id="node"></i>
+                            <i class="fab fa-react" id="react"></i>
+                        </div>
+                        <embed src="cv/CV_Onea_Marius_EN.pdf" />
+                        <div class="cv_container">
+                            <a
+                                class="dwldcv"
+                                href="./cv/CV_Onea_Marius_EN.pdf"
+                                download
+                                >Download CV EN</a
+                            >
+                            <a
+                                class="dwldcv"
+                                href="./cv/CV_Onea_Marius_RO.pdf"
+                                download
+                                >Download CV RO</a
+                            >
+                        </div>
+                    </div>
+                    <!-- PROJECTS -->
+                    <div class="projects pages" id="projects">
+                        <div class="p_container">
+                            <div
+                                class="p_projects"
+                                style="
+                                    background-image: url('/img/marioNet.PNG');
+                                "
+                            >
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs1">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/MarioNet/Capture3_gwdxqz.jpg"
+                                                class="img1"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/MarioNet/Capture2_ctdgrs.jpg"
+                                                class="img1"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/MarioNet/Capture1_nlmt0m.jpg"
+                                                class="img1"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/MarioNet/Capture_anyb3g.jpg"
+                                                class="img1"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">MarioNet</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://marionet.netlify.app/"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="p_projects"
+                                style="
+                                    background-image: url('/img/blackjack1.PNG');
+                                "
+                            >
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs2">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/BlackJack/Capture5_iz6g1m.jpg"
+                                                class="img2"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637745/mariusonea.ro/BlackJack/Capture4_oad0t4.jpg"
+                                                class="img2"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637745/mariusonea.ro/BlackJack/Capture2_uqf6qz.jpg"
+                                                class="img2"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637745/mariusonea.ro/BlackJack/Capture3_em7cl5.jpg"
+                                                class="img2"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637745/mariusonea.ro/BlackJack/Capture1_osyyfp.jpg"
+                                                class="img2"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637745/mariusonea.ro/BlackJack/Capture_zc0gnu.jpg"
+                                                class="img2"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">BlackJack</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://mod-blackjack.netlify.app"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="p_projects"
+                                style="
+                                    background-image: url('/img/catsvsdogs1.PNG');
+                                "
+                            >
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs3">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/CatsVsDogs/Capture5_dqf23q.jpg"
+                                                class="img3"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/CatsVsDogs/Capture3_au9rez.jpg"
+                                                class="img3"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/CatsVsDogs/Capture4_yqd0ya.jpg"
+                                                class="img3"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/CatsVsDogs/Capture2_yg9jlc.jpg"
+                                                class="img3"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/CatsVsDogs/Capture_pxub00.jpg"
+                                                class="img3"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/CatsVsDogs/Capture1_ydfchm.jpg"
+                                                class="img3"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">Cats Vs Dogs</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://mod-cats-vs-dogs.netlify.app"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="p_projects"
+                                style="
+                                    background-image: url('/img/encrypt1.PNG');
+                                "
+                            >
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs4">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/Encrypt/Capture4_kzqvn6.jpg"
+                                                class="img4"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/Encrypt/Capture3_jpxocd.jpg"
+                                                class="img4"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/Encrypt/Capture2_vmnitb.jpg"
+                                                class="img4"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/Encrypt/Capture1_n1zh9o.jpg"
+                                                class="img4"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637746/mariusonea.ro/Encrypt/Capture_tyrc3d.jpg"
+                                                class="img4"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">Encrypt</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://mod-encrypt.netlify.app"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="p_projects"
+                                style="
+                                    background-image: url('/img/projmanagement1.PNG');
+                                "
+                            >
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs5">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637748/mariusonea.ro/ProjManagement/Capture6_xmhxek.jpg"
+                                                class="img5"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637748/mariusonea.ro/ProjManagement/Capture4_erflwp.jpg"
+                                                class="img5"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637748/mariusonea.ro/ProjManagement/Capture5_qitu5k.jpg"
+                                                class="img5"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637748/mariusonea.ro/ProjManagement/Capture3_xlxenk.jpg"
+                                                class="img5"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/ProjManagement/Capture2_xezx80.jpg"
+                                                class="img5"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/ProjManagement/Capture1_mdhq1s.jpg"
+                                                class="img5"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637747/mariusonea.ro/ProjManagement/Capture_t64cdu.jpg"
+                                                class="img5"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">Project Man.</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://mod-project-management.netlify.app"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                class="p_projects"
+                                style="
+                                    background-image: url('/img/reactshop1.PNG');
+                                "
+                            >
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs6">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637730/mariusonea.ro/REACT/Capture2_tcmldo.jpg"
+                                                class="img6"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637730/mariusonea.ro/REACT/Capture3_wf2spk.jpg"
+                                                class="img6"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637730/mariusonea.ro/REACT/Capture4_m8feqm.jpg"
+                                                class="img6"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637730/mariusonea.ro/REACT/Capture_uiasbb.jpg"
+                                                class="img6"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643637730/mariusonea.ro/REACT/Capture1_sic6sn.jpg"
+                                                class="img6"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">React Proj</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://mariusonea-react2.netlify.app"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p_projects">
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs7">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634388/mariusonea.ro/NODE/Capture_w8bvm7.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/Capture7_by8dw1.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/Capture8_cn1qqd.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/Capture2_d4rjzh.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/Capture5_vcdgzc.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/Capture3_k8zvdr.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/Capture6_rhjgkp.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/Capture4_ymniug.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643634387/mariusonea.ro/NODE/capture1_nxmv9f.jpg"
+                                                alt="first-image"
+                                                class="img7"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">Node Proj</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://mariusonea-nodejs-onlineshop.herokuapp.com"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p_projects">
+                                <div class="carousel">
+                                    <div class="image-container" id="imgs8">
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643633444/mariusonea.ro/MERN/Capture1_sqqk0c.png"
+                                                class="img8"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643633444/mariusonea.ro/MERN/Capture4_ghuv85.png"
+                                                class="img8"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643633443/mariusonea.ro/MERN/Capture2_mieaer.png"
+                                                class="img8"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643633443/mariusonea.ro/MERN/Capture_igyhf6.png"
+                                                class="img8"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643633443/mariusonea.ro/MERN/Capture3_u2iojg.png"
+                                                class="img8"
+                                            />
+                                        </div>
+                                        <div class="imgContainerDiv">
+                                            <img
+                                                src="https://res.cloudinary.com/asuramy/image/upload/v1643633443/mariusonea.ro/MERN/Capture5_bxkhgz.png"
+                                                class="img8"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="projName">MERN Proj</div>
+                                <div class="p_open">
+                                    <button class="open_project">
+                                        <a
+                                            href="https://mod-mern.netlify.app"
+                                            target="_black"
+                                            >Open</a
+                                        >
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CONTACT -->
+                    <div class="contact pages" id="contact">
+                        <div class="contact_info">
+                            <div class="extraApp">
+                                <a href="tel:0747295028"
+                                    ><input
+                                        type="tel"
+                                        class="input"
+                                        id="telephone"
+                                        value="0747295028"
+                                        readonly
+                                /></a>
+                                <button class="btn miniApp">
+                                    <i class="fas fa-mobile-alt" id="i_tel"></i>
+                                </button>
+                            </div>
+
+                            <div class="extraApp">
+                                <a href="mailto:oneamariusdaniel@gmail.com"
+                                    ><input
+                                        type="text"
+                                        class="input"
+                                        value="oneamariusdaniel@gmail.com"
+                                        readonly
+                                /></a>
+                                <button class="btn miniApp">
+                                    <i class="fas fa-envelope" id="i_mail"></i>
+                                </button>
+                            </div>
+
+                            <div class="extraApp">
+                                <a href="https://www.github.com/OneaMarius"
+                                    ><input
+                                        type="text"
+                                        class="input"
+                                        value="github.com/OneaMarius"
+                                        readonly
+                                /></a>
+                                <button class="btn miniApp">
+                                    <i class="fab fa-github" id="i_github"></i>
+                                </button>
+                            </div>
+
+                            <div class="extraApp">
+                                <a href="https://www.linkedin.com/in/oneamarius"
+                                    ><input
+                                        type="text"
+                                        class="input"
+                                        value="linkedin.com/in/oneamarius"
+                                        readonly
+                                /></a>
+                                <button class="btn miniApp">
+                                    <i
+                                        class="fab fa-linkedin"
+                                        id="i_linkedin"
+                                    ></i>
+                                </button>
+                            </div>
+
+                            <div class="extraApp">
+                                <a href="https://www.facebook.com/oneamariusd"
+                                    ><input
+                                        type="text"
+                                        class="input"
+                                        value="facebook.com/oneamariusd"
+                                        readonly
+                                /></a>
+                                <button class="btn miniApp">
+                                    <i
+                                        class="fab fa-facebook-square"
+                                        id="i_facebook"
+                                    ></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kinetic"></div>
+                    <div class="door leftDoor"></div>
+                    <div class="door rightDoor"></div>
+                </div>
+            </main>
+
+            <footer id="footer">
+                <!-- <button id="doorBtn">Doors</button> -->
+                <a id="specialLink"></a>
+                <i class="fas fa-chevron-circle-left" id="leftCtrl"></i>
+                <p>
+                    <!-- <span id="createdBy">&#9400;</span> -->
+                    <span id="currentPage">&#9400; Onea Marius</span>
+                    <!-- <span id="createdBy">&#9791;</span> -->
+                </p>
+                <i class="fas fa-chevron-circle-right" id="rightCtrl"></i>
+            </footer>
         </div>
-      </nav>
-      <div class="m_nav">
-        <ul id="mobileNavLinks" class="navLinks">
-          <li><a class="selectedLink">Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-      <!-- End Navigation -->
-      <main>
-        <div class="mainContent">
-          <!-- HOME -->
-          <div class="home pages" id="home">
-            <div class="clock-container">
-              <div class="clock">
-                <div class="needle hour"></div>
-                <div class="needle minute"></div>
-                <div class="needle second"></div>
-                <div class="center-point"></div>
-              </div>
-
-              <div class="time"></div>
-              <div class="date"></div>
-            </div>
-          </div>
-          <!-- ABOUT -->
-          <div class="about pages" id="about">
-            <div class="icons">
-              <i class="fab fa-html5" id="html"></i>
-              <i class="fab fa-css3-alt" id="css"></i>
-              <i class="fab fa-js-square" id="js"></i>
-              <i class="fab fa-node" id="node"></i>
-              <i class="fab fa-react" id="react"></i>
-            </div>
-            <embed src="cv/CV_Onea_Marius_EN.pdf" />
-            <div class="cv_container">
-               <a class="dwldcv" href="./cv/CV_Onea_Marius_EN.pdf" download>Download CV EN</a>
-               <a class="dwldcv" href="./cv/CV_Onea_Marius_RO.pdf" download>Download CV RO</a>
-            </div>
-            
-          </div>
-          <!-- PROJECTS -->
-          <div class="projects pages" id="projects">
-            <div class="p_container">
-              <div
-                class="p_projects"
-                style="background-image: url('/img/marioNet.PNG')"
-              >
-                <div class="projName">MarioNet</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://marionet.netlify.app/" target="_black">Open</a>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="p_projects"
-                style="background-image: url('/img/blackjack1.PNG')"
-              >
-                <div class="projName">BlackJack</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://mod-blackjack.netlify.app" target="_black">Open</a>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="p_projects"
-                style="background-image: url('/img/catsvsdogs1.PNG')"
-              >
-                <div class="projName">Cats Vs Dogs</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://mod-cats-vs-dogs.netlify.app" target="_black">Open</a>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="p_projects"
-                style="background-image: url('/img/encrypt1.PNG')"
-              >
-                <div class="projName">Encrypt</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://mod-encrypt.netlify.app" target="_black">Open</a>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="p_projects"
-                style="background-image: url('/img/projmanagement1.PNG')"
-              >
-                <div class="projName">Project Man.</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://mod-project-management.netlify.app" target="_black"
-                      >Open</a
-                    >
-                  </button>
-                </div>
-              </div>
-              <div
-                class="p_projects"
-                style="background-image: url('/img/reactshop1.PNG')"
-              >
-                <div class="projName">React Proj</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://mariusonea-react2.netlify.app" target="_black">Open</a>
-                  </button>
-                </div>
-              </div>
-              <div
-                class="p_projects"
-                style="background-image: url('/img/nodeShop1.PNG')"
-              >
-                <div class="projName">Node Proj</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://mariusonea-nodejs-onlineshop.herokuapp.com" target="_black"
-                      >Open</a
-                    >
-                  </button>
-                </div>
-              </div>
-              <div
-                class="p_projects"
-                style="background-image: url('/img/mern.PNG')"
-              >
-                <div class="projName">MERN Proj</div>
-                <div class="p_open">
-                  <button class="open_project">
-                    <a href="https://mod-mern.netlify.app" target="_black"
-                      >Open</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CONTACT -->
-          <div class="contact pages" id="contact">
-            <div class="contact_info">
-              <div class="extraApp">
-                <a href="tel:0747295028"
-                  ><input
-                    
-                    type="tel"
-                    class="input"
-                    id="telephone"
-                    value="0747295028"
-                    readonly
-                /></a>
-                <button class="btn miniApp">
-                  <i class="fas fa-mobile-alt" id="i_tel"></i>
-                </button>
-              </div>
-
-              <div class="extraApp">
-                <a href="mailto:oneamariusdaniel@gmail.com"
-                  ><input
-                    type="text"
-                    class="input"
-                    value="oneamariusdaniel@gmail.com"
-                    readonly
-                /></a>
-                <button class="btn miniApp">
-                  <i class="fas fa-envelope" id="i_mail"></i>
-                </button>
-              </div>
-
-              <div class="extraApp">
-                <a href="https://www.github.com/OneaMarius"
-                  ><input
-                    
-                    type="text"
-                    class="input"
-                    value="github.com/OneaMarius"
-                    readonly
-                /></a>
-                <button class="btn miniApp">
-                  <i class="fab fa-github" id="i_github"></i>
-                </button>
-              </div>
-
-              <div class="extraApp">
-                <a href="https://www.linkedin.com/in/oneamarius"
-                  ><input
-                    
-                    type="text"
-                    class="input"
-                    value="linkedin.com/in/oneamarius"
-                    readonly
-                /></a>
-                <button class="btn miniApp">
-                  <i class="fab fa-linkedin" id="i_linkedin"></i>
-                </button>
-              </div>
-
-              <div class="extraApp">
-                <a href="https://www.facebook.com/oneamariusd"
-                  ><input
-                    
-                    type="text"
-                    class="input"
-                    value="facebook.com/oneamariusd"
-                    readonly
-                /></a>
-                <button class="btn miniApp">
-                  <i class="fab fa-facebook-square" id="i_facebook"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="kinetic"></div>
-          <div class="door leftDoor"></div>
-          <div class="door rightDoor"></div>
-        </div>
-      </main>
-
-      <footer id="footer">
-        <!-- <button id="doorBtn">Doors</button> -->
-        <a id="specialLink"></a>
-        <i class="fas fa-chevron-circle-left" id="leftCtrl"></i>
-        <p>
-          <!-- <span id="createdBy">&#9400;</span> -->
-          <span id="currentPage">&#9400; Onea Marius</span>
-          <!-- <span id="createdBy">&#9791;</span> -->
-        </p>
-        <i class="fas fa-chevron-circle-right" id="rightCtrl"></i>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>

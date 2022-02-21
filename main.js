@@ -153,7 +153,7 @@ function run1() {
     if (idx1 > img1.length - 1) {
         idx1 = 0;
     }
-    imgs1.style.transform = `translateX(${-idx1 * 250}px)`;
+    imgs1.style.transform = `translateX(${-idx1 * 400}px)`;
  
 }
 function run2() {
@@ -161,7 +161,7 @@ function run2() {
     if (idx2 > img2.length - 1) {
         idx2 = 0;
     }
-    imgs2.style.transform = `translateX(${-idx2 * 250}px)`;
+    imgs2.style.transform = `translateX(${-idx2 * 400}px)`;
  
 }
 function run3() {
@@ -169,42 +169,42 @@ function run3() {
     if (idx3 > img3.length - 1) {
         idx3 = 0;
     }
-    imgs3.style.transform = `translateX(${-idx3 * 250}px)`;
+    imgs3.style.transform = `translateX(${-idx3 * 400}px)`;
 }
 function run4() {
     idx4++;
     if (idx4 > img4.length - 1) {
         idx4 = 0;
     }
-    imgs4.style.transform = `translateX(${-idx4 * 250}px)`;
+    imgs4.style.transform = `translateX(${-idx4 * 400}px)`;
 }
 function run5() {
     idx5++;
     if (idx5 > img5.length - 1) {
         idx5 = 0;
     }
-    imgs5.style.transform = `translateX(${-idx5 * 250}px)`;
+    imgs5.style.transform = `translateX(${-idx5 * 400}px)`;
 }
 function run6() {
     idx6++;
     if (idx6 > img6.length - 1) {
         idx6 = 0;
     }
-    imgs6.style.transform = `translateX(${-idx6 * 250}px)`;
+    imgs6.style.transform = `translateX(${-idx6 * 400}px)`;
 }
 function run7() {
     idx7++;
     if (idx7 > img7.length - 1) {
         idx7 = 0;
     }
-    imgs7.style.transform = `translateX(${-idx7 * 250}px)`;
+    imgs7.style.transform = `translateX(${-idx7 * 400}px)`;
 }
 function run8() {
     idx8++;
     if (idx8 > img8.length - 1) {
         idx8 = 0;
     }
-    imgs8.style.transform = `translateX(${-idx8 * 250}px)`;
+    imgs8.style.transform = `translateX(${-idx8 * 400}px)`;
 }
 
 

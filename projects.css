@@ -167,7 +167,7 @@
 .project_ctrl_bar {
     width: 100%;
     height: 20%;
-    background-color: beige;
+    background-color: #03a9f4;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -211,6 +211,7 @@
 
 .project_ctrl_bar .open {
     cursor: pointer;
+    background-color: rgb(233, 233, 233);
 }
 .project_ctrl_bar .open:hover {
     background-color: rgb(44, 44, 44);
@@ -241,13 +242,14 @@
     position: absolute;
     left: 0px;
     top: 10%;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(17, 17, 17);
     color: whitesmoke;
     width: 100%;
     height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     transition: all 0.5s ease-in-out;
     /* z-index: 10; */
     transform: translateY(-120%);
@@ -257,4 +259,13 @@
 .info:hover + .project_info {
     transform: translateY(0);
     opacity: 100%;
+}
+
+.project_info .info{
+    width: 100%;
+    padding: 1rem;
+}
+
+.project_info .info type{
+    color: rgb(29, 204, 13);
 }

@@ -112,131 +112,131 @@ function changeBgColor() {
 
 // Projects
 
-const imgs1 = document.getElementById("imgs1");
-const imgs2 = document.getElementById("imgs2");
-const imgs3 = document.getElementById("imgs3");
-const imgs4 = document.getElementById("imgs4");
-const imgs5 = document.getElementById("imgs5");
-const imgs6 = document.getElementById("imgs6");
-const imgs7 = document.getElementById("imgs7");
-const imgs8 = document.getElementById("imgs8");
+// const imgs1 = document.getElementById("imgs1");
+// const imgs2 = document.getElementById("imgs2");
+// const imgs3 = document.getElementById("imgs3");
+// const imgs4 = document.getElementById("imgs4");
+// const imgs5 = document.getElementById("imgs5");
+// const imgs6 = document.getElementById("imgs6");
+// const imgs7 = document.getElementById("imgs7");
+// const imgs8 = document.getElementById("imgs8");
 
-const img1 = document.querySelectorAll(".image-container .img1");
-const img2 = document.querySelectorAll(".image-container .img2");
-const img3 = document.querySelectorAll(".image-container .img3");
-const img4 = document.querySelectorAll(".image-container .img4");
-const img5 = document.querySelectorAll(".image-container .img5");
-const img6 = document.querySelectorAll(".image-container .img6");
-const img7 = document.querySelectorAll(".image-container .img7");
-const img8 = document.querySelectorAll(".image-container .img8");
+// const img1 = document.querySelectorAll(".image-container .img1");
+// const img2 = document.querySelectorAll(".image-container .img2");
+// const img3 = document.querySelectorAll(".image-container .img3");
+// const img4 = document.querySelectorAll(".image-container .img4");
+// const img5 = document.querySelectorAll(".image-container .img5");
+// const img6 = document.querySelectorAll(".image-container .img6");
+// const img7 = document.querySelectorAll(".image-container .img7");
+// const img8 = document.querySelectorAll(".image-container .img8");
 
-let idx1 = 0;
-let idx2 = 0;
-let idx3 = 0;
-let idx4 = 0;
-let idx5 = 0;
-let idx6 = 0;
-let idx7 = 0;
-let idx8 = 0;
+// let idx1 = 0;
+// let idx2 = 0;
+// let idx3 = 0;
+// let idx4 = 0;
+// let idx5 = 0;
+// let idx6 = 0;
+// let idx7 = 0;
+// let idx8 = 0;
 
-setInterval(run1, 2000);
-setInterval(run2, 2150);
-setInterval(run3, 2300);
-setInterval(run4, 2450);
-setInterval(run5, 2600);
-setInterval(run6, 3750);
-setInterval(run7, 2900);
-setInterval(run8, 2700);
+// setInterval(run1, 2000);
+// setInterval(run2, 2150);
+// setInterval(run3, 2300);
+// setInterval(run4, 2450);
+// setInterval(run5, 2600);
+// setInterval(run6, 3750);
+// setInterval(run7, 2900);
+// setInterval(run8, 2700);
 
-function run1() {
-    idx1++;
-    if (idx1 > img1.length - 1) {
-        idx1 = 0;
-    }
-    imgs1.style.transform = `translateX(${-idx1 * 400}px)`;
+// function run1() {
+//     idx1++;
+//     if (idx1 > img1.length - 1) {
+//         idx1 = 0;
+//     }
+//     imgs1.style.transform = `translateX(${-idx1 * 400}px)`;
  
-}
-function run2() {
-    idx2++;
-    if (idx2 > img2.length - 1) {
-        idx2 = 0;
-    }
-    imgs2.style.transform = `translateX(${-idx2 * 400}px)`;
+// }
+// function run2() {
+//     idx2++;
+//     if (idx2 > img2.length - 1) {
+//         idx2 = 0;
+//     }
+//     imgs2.style.transform = `translateX(${-idx2 * 400}px)`;
  
-}
-function run3() {
-    idx3++;
-    if (idx3 > img3.length - 1) {
-        idx3 = 0;
-    }
-    imgs3.style.transform = `translateX(${-idx3 * 400}px)`;
-}
-function run4() {
-    idx4++;
-    if (idx4 > img4.length - 1) {
-        idx4 = 0;
-    }
-    imgs4.style.transform = `translateX(${-idx4 * 400}px)`;
-}
-function run5() {
-    idx5++;
-    if (idx5 > img5.length - 1) {
-        idx5 = 0;
-    }
-    imgs5.style.transform = `translateX(${-idx5 * 400}px)`;
-}
-function run6() {
-    idx6++;
-    if (idx6 > img6.length - 1) {
-        idx6 = 0;
-    }
-    imgs6.style.transform = `translateX(${-idx6 * 400}px)`;
-}
-function run7() {
-    idx7++;
-    if (idx7 > img7.length - 1) {
-        idx7 = 0;
-    }
-    imgs7.style.transform = `translateX(${-idx7 * 400}px)`;
-}
-function run8() {
-    idx8++;
-    if (idx8 > img8.length - 1) {
-        idx8 = 0;
-    }
-    imgs8.style.transform = `translateX(${-idx8 * 400}px)`;
-}
+// }
+// function run3() {
+//     idx3++;
+//     if (idx3 > img3.length - 1) {
+//         idx3 = 0;
+//     }
+//     imgs3.style.transform = `translateX(${-idx3 * 400}px)`;
+// }
+// function run4() {
+//     idx4++;
+//     if (idx4 > img4.length - 1) {
+//         idx4 = 0;
+//     }
+//     imgs4.style.transform = `translateX(${-idx4 * 400}px)`;
+// }
+// function run5() {
+//     idx5++;
+//     if (idx5 > img5.length - 1) {
+//         idx5 = 0;
+//     }
+//     imgs5.style.transform = `translateX(${-idx5 * 400}px)`;
+// }
+// function run6() {
+//     idx6++;
+//     if (idx6 > img6.length - 1) {
+//         idx6 = 0;
+//     }
+//     imgs6.style.transform = `translateX(${-idx6 * 400}px)`;
+// }
+// function run7() {
+//     idx7++;
+//     if (idx7 > img7.length - 1) {
+//         idx7 = 0;
+//     }
+//     imgs7.style.transform = `translateX(${-idx7 * 400}px)`;
+// }
+// function run8() {
+//     idx8++;
+//     if (idx8 > img8.length - 1) {
+//         idx8 = 0;
+//     }
+//     imgs8.style.transform = `translateX(${-idx8 * 400}px)`;
+// }
 
 
 ////// hover bg /////
 
-const container = document.querySelector('#projects')
-const colors = ['#1c1c1c', '#2c2c2c', '#3c3c3c', '#4c4c4c', '#5c5c5c']
-const SQUARES = 3500
+// const container = document.querySelector('#projects')
+// const colors = ['#1c1c1c', '#2c2c2c', '#3c3c3c', '#4c4c4c', '#5c5c5c']
+// const SQUARES = 3500
 
-for(let i = 0; i < SQUARES; i++) {
-    const square = document.createElement('div')
-    square.classList.add('square')
+// for(let i = 0; i < SQUARES; i++) {
+//     const square = document.createElement('div')
+//     square.classList.add('square')
 
-    square.addEventListener('mouseover', () => setColor(square))
+//     square.addEventListener('mouseover', () => setColor(square))
 
-    square.addEventListener('mouseout', () => removeColor(square))
+//     square.addEventListener('mouseout', () => removeColor(square))
 
-    container.appendChild(square)
-}
+//     container.appendChild(square)
+// }
 
-function setColor(element) {
-   const color = getRandomColor()
-   element.style.background = color
-   element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
-}
+// function setColor(element) {
+//    const color = getRandomColor()
+//    element.style.background = color
+//    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
+// }
 
-function removeColor(element) {
-   element.style.background = '#1d1d1d'
-   element.style.boxShadow = '0 0 2px #000'
-}
+// function removeColor(element) {
+//    element.style.background = '#1d1d1d'
+//    element.style.boxShadow = '0 0 2px #000'
+// }
 
-function getRandomColor() {
-    // return colors[Math.floor(Math.random() * colors.length)]
-    return `rgb(${randomRGB()})`
-}
+// function getRandomColor() {
+    
+//     return `rgb(${randomRGB()})`
+// }

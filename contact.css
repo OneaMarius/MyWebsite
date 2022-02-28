@@ -52,7 +52,7 @@
     transition: all 0.5s ease;
     border: none;
     background-color: transparent;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 0px 0px 0px 3px rgba(46, 46, 46, 0.87);
     border-radius: 10px;
     background-color: white;
 }

@@ -161,7 +161,7 @@
 .project_photo {
     width: 100%;
     height: 70%;
-    background-color: teal;
+    background-color: rgb(17, 17, 17);
 }
 
 .project_ctrl_bar {
